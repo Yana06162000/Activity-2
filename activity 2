@@ -1,0 +1,90 @@
+//
+//  main.cpp
+//  activity2
+//
+//  Created by Julia Sumague on 04/05/2019.
+//  Copyright © 2019 Julia Sumague. All rights reserved.
+//
+
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+int main()
+{
+ 
+    int month, date, year;
+    
+    cout << "Enter month (1-12): \n"; cin >> month;
+        if (month <= 0)
+        {
+            cout << "INVALID INPUT!\n";
+            return 0;
+        }
+        else if (month >= 13)
+        {
+            cout << "INVALID INPUT!\n";
+            return 0;
+        }
+    cout << "Enter day (1-31): \n"; cin >> date;
+        if (date <= 0)
+        {
+            cout << "INVALID INPUT!\n";
+            return 0;
+        }
+        else if (date >= 32)
+        {
+            cout << "INVALID INPUT!\n";
+            return 0;
+        }
+    cout << "Enter year: \n"; cin >> year;
+        if (year <= 000)
+        {
+            cout << "INVALID INPUT!\n";
+            return 0;
+        }
+    
+    switch (month)
+    {
+        case 1:
+            cout << "January " << date << "," << year;
+            break;
+        case 2:
+            cout << "February " << date << "," << year;
+            break;
+        case 3:
+            cout << "March " << date << "," << year;
+            break;
+        case 4:
+            cout << "April " << date << "," << year;
+            break;
+        case 5:
+            cout << "May " << date << "," << year;
+            break;
+        case 6:
+            cout << "June " << date << "," << year;
+            break;
+        case 7:
+            cout << "July " << date << "," << year;
+            break;
+        case 8:
+            cout << "August " << date << "," << year;
+            break;
+        case 9:
+            cout << "September " << date << "," << year;
+            break;
+        case 10:
+            cout << "October " << date << "," << year;
+            break;
+        case 11:
+            cout << "November " << date << "," << year;
+            break;
+        case 12:
+            cout << "December " << date << "," << year;
+            break;
+    }
+    
+    cout << endl;
+    
+    return 0;
+}
